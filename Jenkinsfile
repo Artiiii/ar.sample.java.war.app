@@ -1,4 +1,4 @@
-@Library('shared_library')_
+@Library('shared_library@main')_
 //jenkinsForJava 'https://github.com/Artiiii/ar.sample.java.war.app.git'
 pipeline {
     agent any
