@@ -1,4 +1,4 @@
-@Library('shared-library@main')_
+@Library('shared-library@main') _
 Maven 'https://github.com/Artiiii/ar.sample.java.war.app.git'
 //pipeline {
 //    agent any
