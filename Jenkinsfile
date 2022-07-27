@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Maven Build') {
             steps {
-                 bat label: '', script: 'ipconfig  -all'
+                 bat label: '', script: 'mvn clean package'
                 //BuildApp()
             }
             }
