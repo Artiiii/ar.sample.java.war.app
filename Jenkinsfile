@@ -15,13 +15,15 @@ pipeline {
         }
         stage('Maven Build') {
             steps {
-                 //bat label: '', script: 'mvn clean package'
-                BuildApp()
-                //sh "mvn clean package"
+                BuildApp()               
+            }
+            }
+        stage('Maven Build') {
+            steps {           
+                DeployApp()
             }
             }
             
     
     }
 }
-C:\Users\Arti Pal\Documents\tools\apache-tomcat-10.0.23-windows-x64\apache-tomcat-10.0.23\webapps
