@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Maven Build') {
             steps {
-                mvn clean
+                INvoke-Expression "mvn clean"
                 //BuildApp()
             }
             }
