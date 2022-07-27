@@ -9,6 +9,7 @@ pipeline {
                 branch: "main",
                 url: "https://github.com/Artiiii/ar.sample.java.war.app.git"
                 //hello("Arti")
+                  )
             
             }
     }
