@@ -12,9 +12,10 @@ pipeline {
                   )
             
             }
-         stage('Maven Build')
+        stage('Maven Build') {
             steps {
                 BuildApp()
+            }
             }
             
     }
