@@ -13,11 +13,11 @@ pipeline {
             
             }
         }
-        stage('Maven Build') {
-            steps {
-                BuildApp()               
-            }
-            }
+        //stage('Maven Build') {
+           // steps {
+        //        BuildApp()               
+        //    }
+        //    }
         stage('Deploy App') {
             steps {           
                 DeployApp()
