@@ -18,7 +18,7 @@ pipeline {
                 BuildApp()               
             }
             }
-        stage('Maven Build') {
+        stage('Deploy App') {
             steps {           
                 DeployApp()
             }
