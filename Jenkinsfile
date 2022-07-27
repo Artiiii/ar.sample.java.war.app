@@ -8,7 +8,7 @@ pipeline {
             //BuildJava(
             //    branch: "main",
             //    url: "https://github.com/Artiiii/ar.sample.java.war.app.git"
-              welcome("Arti")
+              hello("Arti")
             )
             }
     }
