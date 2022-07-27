@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Maven Build') {
             steps {
-                "H:\apache-maven-3.8.6-bin\apache-maven-3.8.6\bin\mvn.exe" clean package
+                bat "start cmd.exe /c mvn clean package"
                 //BuildApp()
             }
             }
