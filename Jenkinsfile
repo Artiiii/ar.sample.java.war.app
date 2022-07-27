@@ -12,6 +12,11 @@ pipeline {
                   )
             
             }
+         stage('Maven Build')
+            steps {
+                BuildApp()
+            }
+            
     }
     }
 }
