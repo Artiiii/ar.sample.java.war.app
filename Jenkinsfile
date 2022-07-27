@@ -1,5 +1,5 @@
 @Library('shared-library') _
-Maven 'https://github.com/Artiiii/ar.sample.java.war.app.git'
+Mavenbuild 'https://github.com/Artiiii/ar.sample.java.war.app.git'
 //pipeline {
 //    agent any
 //    stages {
