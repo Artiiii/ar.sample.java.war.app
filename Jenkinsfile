@@ -15,8 +15,9 @@ pipeline {
         }
         stage('Maven Build') {
             steps {
-                 bat label: '', script: 'mvn clean package'
+                 //bat label: '', script: 'mvn clean package'
                 //BuildApp()
+                sh "mvn clean package"
             }
             }
             
