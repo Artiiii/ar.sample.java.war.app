@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-              BuildJava(
+              GitCheckout(
                 branch: "main",
                 url: "https://github.com/Artiiii/ar.sample.java.war.app.git"
                 //hello("Arti")
