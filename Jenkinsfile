@@ -3,29 +3,29 @@
 pipeline {
     agent any
     stages {
-        stage('Git Checkout') {
-            steps {
-              BuildJava(
-                branch: "main",
-                url: "https://github.com/Artiiii/ar.sample.java.war.app.git"
-                //hello("Arti")
-                  )
-            
-            }
-        }
-        stage('Maven Build') {
-            steps {
-                BuildApp()               
-            }
-            }
-        stage('Deploy App') {
-            steps {           
-                DeployApp()
-            }
-            }
+    //    stage('Git Checkout') {
+    //        steps {
+    //          BuildJava(
+    //            branch: "main",
+    //            url: "https://github.com/Artiiii/ar.sample.java.war.app.git"
+    //            //hello("Arti")
+    //              )
+    //        
+    //        }
+    //    }
+    //    stage('Maven Build') {
+    //        steps {
+    //            BuildApp()               
+    //        }
+    //        }
+    //    stage('Deploy App') {
+    //        steps {           
+    //            DeployApp()
+    //        }
+    //        }
         stage('Restart Tomcat') {
             steps {           
-                RestartTomcat()
+                RestartTomcatTest()
             }
             }
             
