@@ -25,7 +25,7 @@ pipeline {
  //           }
         stage('Restart Tomcat') {
             steps {           
-                RestartTomcat()
+                RestartTomcatTest()
             }
             }
             
