@@ -8,6 +8,11 @@ pipeline {
                BuildApp()               
            }
            }
+        stage('Sonar Analysis') {
+           steps {
+               SonarApp()               
+           }
+        
        stage('Deploy App') {
            steps {           
                DeployApp()
