@@ -12,7 +12,7 @@ pipeline {
            steps {
                SonarApp()               
            }
-        
+        }
        stage('Deploy App') {
            steps {           
                DeployApp()
