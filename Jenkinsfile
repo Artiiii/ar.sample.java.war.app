@@ -18,12 +18,7 @@ pipeline {
            steps {
                StoreToNexus()               
            }
-           }
-       stage('Deploy App') {
-           steps {           
-               DeployApp()
-           }
-           }   
+           }  
     
     }
 }
