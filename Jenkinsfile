@@ -11,6 +11,14 @@ pipeline {
                BuildApp()               
            }
            }
+        stage('Store war file in Nexus') {
+           tools {
+                   jdk "java"
+                }
+           steps {
+               StoreToNexus()               
+           }
+           }
        stage('Deploy App') {
            steps {           
                DeployApp()
