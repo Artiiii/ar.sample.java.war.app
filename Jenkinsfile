@@ -8,6 +8,11 @@ pipeline {
                BuildApp()               
            }
            }
+        stage('Store war to Nexus') {
+           steps {
+               StoreToNexus()               
+           }
+           }
         stage('Sonar Analysis') {
            steps {
                SonarApp()               
