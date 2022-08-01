@@ -5,7 +5,7 @@ pipeline {
     
        stage('Maven Build') {
            tools {
-                   jdk "jdk-11.0.16"
+                   jdk "java"
                 }
            steps {
                BuildApp()               
