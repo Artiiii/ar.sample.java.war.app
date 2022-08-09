@@ -11,6 +11,15 @@ pipeline {
                BuildApp()               
            }
            }
+          stage('Sonar Analysis') {
+           tools {
+                   jdk "java"
+                }
+           steps {
+               SonarApp()               
+           }
+           }
+         
         stage('Store war file in Nexus') {
            tools {
                    jdk "java"
@@ -18,7 +27,15 @@ pipeline {
            steps {
                StoreToNexus()               
            }
-           }  
+           } 
+         stage('Deploy App') {
+           tools {
+                   jdk "java"
+                }
+           steps {
+               DeployApp()               
+           }
+           }
     
     }
 }
