@@ -1,6 +1,9 @@
 @Library('shared-library') _
 pipeline {
     agent any
+    environment {
+     sonarlogin = credentials('sonar_token')
+    }
     stages {
     
        stage('Maven Build') {
@@ -16,7 +19,7 @@ pipeline {
                    jdk "java"
                 }
            steps {
-               SonarApp()               
+               SonarApp(sonarlogin)               
            }
            }
          
